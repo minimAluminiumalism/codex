@@ -838,7 +838,7 @@ impl ModelClientSession {
             tool_choice: "auto".to_string(),
             parallel_tool_calls: prompt.parallel_tool_calls,
             reasoning,
-            store: provider.is_azure_responses_endpoint(),
+            store: false,
             stream: true,
             include,
             service_tier: match service_tier {
